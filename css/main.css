@@ -1,0 +1,110 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #393939;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /*去掉自带的样式*/
+
+    outline: none;
+    box-shadow: 0 1px 0 0px #424242, 0 1px 0 #060607 inset, 0px 2px 10px 0px black inset, 1px 0px 2px rgba(0, 0, 0, 0.4) inset, 0 0px 1px rgba(0, 0, 0, 0.6) inset;
+    background-color: #272728;
+    border-radius: 15px;
+    width: 100px;
+    height: 6px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /*去掉自带的样式*/
+    cursor: default;
+    height: 15px;
+    width: 15px;
+    background: none repeat scroll 0 0 #777;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    height: 450px;
+}
+
+.side-bar {
+    width: 200px;
+}
+
+.main {
+    position: relative;
+}
+
+.header .div-tool {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid #505050;
+    color: #bbbbbb;
+}
+
+.header .div-tool .item {
+    padding: 10px 15px;
+}
+
+.header .div-tool .item:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header .div-speed {
+    display: flex;
+    align-items: center;
+}
+
+.header .div-speed .active{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    position: relative;
+    flex: 1;
+    background: #242424;
+}
+
+.content {
+    position: relative;
+    margin: auto;
+    height: 100%;
+}
+
+.main .item {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 30px;
+    background: #ccc;
+    text-align: center;
+    transition: left 1s;
+}
+
+.main .active {
+    background: #ffeb3b;
+}
+
+.main .fix {
+    background: #2962ff;
+}
