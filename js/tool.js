@@ -9,7 +9,6 @@ const swapElement = function(aElement, bElement) {
 }
 
 const swap = async (arr, i, j) => {
-    // print()
     let t = arr[i]
     arr[i] = arr[j]
     arr[j] = t
@@ -34,9 +33,7 @@ const sleep = (duration) => {
 }
 
 const print = () => {
-    /**
-     * 
-     */
+    // 调试使用
     let h = ''
     let l = ''
     for (let i = 0; i < items.length; i++) {
