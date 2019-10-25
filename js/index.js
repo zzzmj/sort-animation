@@ -6,7 +6,7 @@ const createDivs = (arr) => {
     for (let i = 0; i < len; i++) {
         const style = {
             text: arr[i],
-            height: arr[i] + 'px',
+            height: arr[i] + '%',
             left: i*40 + 'px'
         }
         updateItems(items[i], style)
@@ -45,7 +45,7 @@ const sortRun = (arr) => {
 }
 
 const __main = async () => {
-    const arr = randomArr(50, 400, 15)
+    const arr = randomArr(20, 90, 15)
     window.fps = 1000
     createDivs(arr)
     handleSpeed()

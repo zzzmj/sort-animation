@@ -1,0 +1,30 @@
+.header {
+  box-sizing: border-box;
+  height: 45px;
+  border-bottom: 1px solid #505050;
+}
+
+.header .div-tool {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  color: #bbbbbb;
+}
+
+.header .div-tool .item {
+  padding: 10px 15px;
+}
+
+.header .div-tool .item:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header .div-speed {
+  display: flex;
+  align-items: center;
+}
+
+.header .div-speed .active{
+  background-color: rgba(0, 0, 0, 0.2);
+}

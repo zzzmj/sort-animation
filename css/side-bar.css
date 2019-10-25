@@ -1,0 +1,19 @@
+.side-bar {
+  width: 200px;
+  background: #2e2e2e;
+}
+
+.side-bar .ul-sort-option li{
+  color: #bbbbbb;
+  padding: 10px 0px;
+  padding-left: 15px;
+}
+
+.side-bar .ul-sort-option li:hover {
+  background-color: hsla(0,0%,100%,.1);
+  cursor: pointer;
+}
+
+.side-bar .ul-sort-option .active {
+  background: #393939;
+}
